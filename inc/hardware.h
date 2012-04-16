@@ -1,0 +1,43 @@
+#ifndef _HARD_WARE_H_
+#define _HARD_WARE_H_
+
+#define UART0_BASE_ADDR			(0x81700000)
+#define UART1_BASE_ADDR			(0x81800000)
+#define UART2_BASE_ADDR			(0x81900000)
+#define UART3_BASE_ADDR			(0x81a00000)
+
+#define WDT_BASE_ADDR			(0x80130000)
+#define TIMER_BASE_ADDR			(0x80140000)
+
+#define GPIO0_BASE_ADDR			(0x80190000)
+#define GPIO1_BASE_ADDR			(0x80198000)
+#define GPIO2_BASE_ADDR			(0x801A0000)
+#define GPIO3_BASE_ADDR			(0x801A8000)
+#define GPIO4_BASE_ADDR			(0x801B0000)
+#define GPIO5_BASE_ADDR			(0x801B8000)
+
+#define DDRC_BASE_ADDR			(0x91600000)
+
+#define USBD_BASE_ADDR			(0x91200000)
+#define NFC_BASE_ADDR			(0x91300000)
+#define SDIO0_BASE_ADDR			(0x91800000)
+#define SDIO1_BASE_ADDR			(0x91900000)
+#define SDIO2_BASE_ADDR			(0x91a00000)
+
+#define EMAC_BASE_ADDR			(0x91400000)
+
+#define CIPHER_BASE_ADDR		(0x9a000000)
+#define DES_BASE_ADDR			(CIPHER_BASE_ADDR + 0x0000)
+#define AES_BASE_ADDR			(CIPHER_BASE_ADDR + 0x8000)
+#define SHA_BASE_ADDR			(CIPHER_BASE_ADDR + 0x9000)
+#define CIPHER_SHARED_MEMORY_BASE_ADDR	(CIPHER_BASE_ADDR + 0x6000)
+#define CIPHER_SHARED_MEMORY_SIZE		(SZ_4K)
+
+#define SYSC_BASE_ADDR              (0x80150000)
+#define PMU_BASE_ADDR               (0x801e0000)
+
+#include <iomux.h>
+#include <clk.h>
+#include <gpio.h>
+
+#endif	//_HARD_WARE_H_
